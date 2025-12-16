@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rania</title>
+  <style>
+    body {
+      min-height: 100vh;
+      background-image: url("jane.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      font-family: sans-serif;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .banner {
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      padding: 20px;
+      font-size: larger;
+    }
+
+    .almas {
+      text-align: center;
+      text-decoration: line-through;
+      color: rgb(230, 2, 2);
+      font-weight: bold;
+      padding: 20px;
+      font-size: large;
+    }
+
+    ul {
+      margin-top: 10px;
+      padding: 0;
+      list-style: none;
+      width: 250px;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    li {
+      margin: 5px 0;
+      padding: 8px;
+      border-radius: 4px;
+      background: rgba(0,0,0,0.5); /* overlay for readability */
+    }
+
+    button {
+      display: block;
+      margin: 0 auto 10px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 8px;
+      background: transparent;
+    }
+    button:hover{
+        background-color: white;
+    }
+
+    .lists {
+      display: flex;
+      justify-content : flex-start;
+      gap: 40px;
+      margin-top: 20px;
+    }
+
+    .section {
+      text-align: center;
+    }
+
+    .ulrania {
+      background-image: url("hitlerjoy.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .ulalmas {
+      background-image: url("hitlerangry.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    .hitler{
+        background-image: url("hitlerjoy.jpeg");
+        padding-top : 30px;
+        padding-bottom: 30px;
+        color : red;
+    }
+    .angry{
+        background-image: url("hitlerangry.jpeg");
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="banner">SOLO RANIA</h1>
+  <h2 class="almas">FUCK ALMAS</h2>
+
+  <div class="lists">
+    <div class="section">
+      <button id="raniaq">QUALITIES OF RANIA</button>
+      <ul class="hidden ulrania" id="ranialist">
+        <li>LGOSSA LWA3RA, WA3RAAAAAA</li>
+        <li>DFAR LMSAWBIN</li>
+        <li class="hitler">HEIL HITLER</li>
+        <li>ZWINA</li>
+        <li>wow</li>
+        <li>wow</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <button id="almasq">ALMAS</button>
+      <ul class="hidden ulalmas" id="almaslist">
+        <li>w999999999999,
+             999999</li>
+        <li>ki zebi</li>
+        <li class="hitler angry">HEIL HITLER</li>
+        <li>ki zebi</li>
+        <li>ki zebi</li>
+        <li>ki zebi</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    const rbutton = document.getElementById("raniaq");
+const almasbutton = document.getElementById("almasq");
+
+const raniaList = document.getElementById("ranialist");
+const almasList = document.getElementById("almaslist");
+
+rbutton.addEventListener("click", () =>{
+    raniaList.classList.toggle("hidden");
+});
+
+almasbutton.addEventListener("click", () => {
+    almasList.classList.toggle("hidden");
+})
+  </script>
+</body>
+</html>
